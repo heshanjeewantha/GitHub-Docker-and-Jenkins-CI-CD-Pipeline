@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t heshan2000/my-node-app:${BUILD_NUMBER} .'
+                bat 'docker build -t heshan2000/my-node-app2:${BUILD_NUMBER} .'
             }
         }
         stage('Login to Docker Hub') {
